@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p id="pr">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur similique ducimus alias, autem nostrum sit natus repellendus sunt velit recusandae iusto dignissimos delectus, nam non blanditiis iste magnam asperiores nobis.
+	</p>
+	<button onClick="color()">
+		change color
+	</button>
+	<script>
+		function color(){
+			var co=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+			var n1=Math.floor(Math.random()*16);
+			var n2=Math.floor(Math.random()*16);
+			var n3=Math.floor(Math.random()*16);
+			document.getElementById("pr").style.color="#"+co[n1]+co[n2]+co[n3];
+			
+		}
+		
+	</script>
+</body>
+</html>
