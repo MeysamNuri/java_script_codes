@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		#mydiv{
+			width:400px;
+			height:200px;
+			border:2px solid black;
+			margin:100px auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="mydiv">
+	</div>
+	<button onClick="cr()">
+		circle
+	</button>
+	<button onClick="rect()">
+		rect
+	</button>
+	<script>
+		function cr(){
+			document.getElementById("mydiv").style.borderRadius="50%";
+			document.getElementById("mydiv").style.width="200px";
+		}
+		function rect(){
+			document.getElementById("mydiv").style.borderRadius="0%";
+		}
+	</script>
+</body>
+</html>

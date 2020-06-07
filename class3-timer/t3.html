@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p id="timer"></p>
+	<script>
+		var ms=0;
+		var s=0;
+		var m=0;
+		function con(){
+			ms++;
+			if(ms>100){
+				ms=0;
+				s++;
+			}
+			if(s>60){
+				m++;
+				s=0;
+			}
+			document.getElementById("timer").innerHTML=m+":"+s+":"+ms;
+		}
+		setInterval(con,10);
+
+	
+	</script>
+</body>
+</html>

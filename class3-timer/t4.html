@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<button onClick="start()" id="start">start</button>
+	<button onClick="pause()" id="pause">pause</button>
+	<button onClick="reset()">reset</button>
+	<p id="timer"></p>
+	<script>
+		var ms=0;
+		var s=0;
+		var m=0;
+		var seti;
+		function con(){
+			ms++;
+			if(ms>100){
+				ms=0;
+				s++;
+			}
+			if(s>60){
+				m++;
+				s=0;
+			}
+			document.getElementById("timer").innerHTML=m+":"+s+":"+ms;
+		}
+		function start(){
+			seti=setInterval(con,10);
+			document.getElementById("start").disabled=true;
+			document.getElementById("pause").disabled=false;
+		}
+		function pause(){
+			clearInterval(seti);
+			document.getElementById("start").disabled=false;
+			document.getElementById("pause").disabled=true;
+		}
+		function reset(){
+			ms=0;
+			s=0;
+			m=0;
+			document.getElementById("timer").innerHTML=m+":"+s+":"+ms;
+		}
+
+
+
+	</script>
+</body>
+</html>

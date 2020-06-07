@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		#mydiv{
+			width:200px;
+			height:200px;
+			border:2px solid black;
+			margin:100px auto;
+			transition: 1s;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="mydiv">
+	</div>
+	<p id="pr"></p>
+	<script>
+		function cr(){
+			var r=(Math.floor(Math.random()*180))-90;
+			document.getElementById("mydiv").style.transform="rotate("+r+"deg)";
+			document.getElementById("pr").innerHTML=r+"deg";
+		}
+		
+		setInterval(cr,1000);
+	</script>
+
+
+</body>
+</html>

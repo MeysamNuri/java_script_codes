@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1 id="t"></h1>
+	<script>
+		var count=15;
+		function co(){
+			count--;
+			
+			
+			if(count<0){
+				alert("finish");
+				count=15;
+			
+			}
+			document.getElementById("t").innerHTML=count;
+		}
+		setInterval(co,100);
+
+
+	
+	</script>
+</body>
+</html>

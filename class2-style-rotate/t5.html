@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" placeholder="first name" id="fname">
+	<input type="text" placeholder="last name" id="lname">
+	<button onClick="myfunc()">
+		agree
+	</button>
+	<script>
+		function myfunc(){
+			var fn=document.getElementById("fname").value;
+			var ln=document.getElementById("lname").value;
+			alert(fn+" "+ln);
+		}
+		
+		
+	</script>
+</body>
+</html>
