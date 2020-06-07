@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<input type="text" placeholder="کیلومتر" id="k">
+<button onClick="myfunc()">
+	محاسبه
+</button>
+<p id="pr"></p>
+<script>
+	function myfunc(){
+		var k=Number(document.getElementById("k").value);
+		var bmi= (k/10);
+		document.getElementById("pr").innerHTML=bmi;
+	}
+</script>
+</body>
+</html>

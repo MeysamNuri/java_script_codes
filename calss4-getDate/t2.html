@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="pr"></p>
+<script>
+function td(){
+	var d=new Date();
+	document.getElementById("pr").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+"<br/>"+d.getFullYear()+"/"+d.getMonth()+"/"+d.getDate();
+}
+setInterval(td,1000);
+	
+</script>
+</body>
+</html>

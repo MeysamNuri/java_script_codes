@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="pr"></p>
+<script>
+	var d=new Date();
+	var day=d.getDay();
+	if(day==0){
+		document.getElementById("pr").innerHTML="یکشنبه";	
+	}else if(day==1){
+		document.getElementById("pr").innerHTML="دوشنبه";
+	}else if(day==2){
+		document.getElementById("pr").innerHTML="سه شنبه";
+	}else if(day==3){
+		document.getElementById("pr").innerHTML="چهارشنبه";
+	}else if(day==4){
+		document.getElementById("pr").innerHTML="پنج شنبه";
+	}else if(day==5){
+		document.getElementById("pr").innerHTML="جمعه";
+	}
+	else if(day==6){
+		document.getElementById("pr").innerHTML="شنبه";
+	}
+</script>
+</body>
+</html>

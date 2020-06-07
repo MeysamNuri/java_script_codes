@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="pr"></p>
+<script>
+	var d=new Date();
+	var day=d.getDay();
+	switch(day){
+		case 0:
+			document.getElementById("pr").innerHTML="یکشنبه";	
+			break;
+		case 1:
+			document.getElementById("pr").innerHTML="دوشنبه";
+			break;
+		case 2:
+			document.getElementById("pr").innerHTML="سه شنبه";
+			break;
+		case 3:
+			document.getElementById("pr").innerHTML="چهارشنبه";
+			break;
+		case 4:
+			document.getElementById("pr").innerHTML="پنج شنبه";
+			break;
+		case 5:
+			document.getElementById("pr").innerHTML="جمعه";
+			break;
+		case 6:
+			document.getElementById("pr").innerHTML="شنبه";
+			break;
+		default:	
+			document.getElementById("pr").innerHTML="خطا";	
+	
+	}
+</script>
+</body>
+</html>
