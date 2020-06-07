@@ -1,2 +1,2 @@
 # java_script_codes
-All my js coes
+All my js codes
