@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	body{
+		background:url(b.png);
+		transition:0.1s;
+	}
+	
+</style>
+</head>
+
+<body id="move">
+<script>
+var l=0
+
+function move(){
+	l++
+	document.getElementById("move").style.backgroundPosition=l+"px"
+}	
+setInterval(move,100)
+</script>
+</body>
+</html>

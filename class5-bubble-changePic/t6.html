@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<img src="img1.png" alt="" width="200" onMouseOver="pic1()" onMouseOut="pic2()">
+<br>
+<button onClick="pic1()" id="btn1">
+	picture1
+</button>
+<button onClick="pic2()" id="btn2">
+	picture2
+</button>
+<script>
+	document.getElementById("btn1").disabled=true;
+	function pic1(){
+	
+		document.getElementsByTagName("img")[0].src="img1.png";	
+		document.getElementById("btn1").disabled=true;
+		document.getElementById("btn2").disabled=false;
+		
+	}
+	function pic2(){
+		document.getElementsByTagName("img")[0].src="img2.png";	
+		document.getElementById("btn2").disabled=true;
+		document.getElementById("btn1").disabled=false;
+	}
+</script>
+</body>
+</html>

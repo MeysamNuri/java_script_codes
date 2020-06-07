@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+div{
+	width:200px;
+	height:200px;
+	border:2px solid black;	
+}
+
+</style>
+</head>
+
+<body>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<div class="mydiv"></div>
+<script>
+	// var c=document.getElementsByClassName("mydiv");
+	// for(var i=0;i<c.length;i++){
+	// 	if(i%2==0){
+	// 		c[i].style.backgroundColor="red";	
+	// 	}else{
+	// 		c[i].style.backgroundColor="blue";	
+	// 	}
+		
+	// }
+	var c=document.getElementsByClassName("mydiv")
+	for(var i=0 ; i<c.length;i++){
+		if(i%2==0){
+			c[i].style.backgroundColor="red"
+		}
+		else{
+			c[i].style.backgroundColor="green"
+		}
+	}
+	
+</script>
+
+</body>
+</html>

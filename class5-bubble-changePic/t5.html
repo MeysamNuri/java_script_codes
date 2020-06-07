@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+img{
+	position:absolute;	
+	transition:1s;
+	transition-timing-function:linear;
+}
+</style>
+</head>
+
+<body id="bu">
+<script>
+    var img="";
+    for (var i=0;i<100;i++){
+
+        var w=Math.floor(Math.random()*50)+50;
+        img+="<img src='a.png' width='"+w+"px'>"
+    }
+document.getElementById("bu").innerHTML=img;
+var t,l;
+function bubble(){
+    var w=window.innerWidth - 100;
+    var h=window.innerHeight - 100;
+	for(var j=0;j<2000;j++){
+
+		l=Math.floor(Math.random()*w);
+		t=Math.floor(Math.random()*h);
+		document.getElementsByTagName("img")[j].style.top=t+"px";
+		document.getElementsByTagName("img")[j].style.left=l+"px";
+	}	
+}
+setInterval(bubble,1000);
+</script>
+</body>
+</html>
