@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="pr"> </p>
+<script>
+	var n=["majid","ali","reza","mohamad","kalan","mohamadreza","tina","asghar"];
+	n.sort()
+	var txt=""
+	var size;
+	for(var i=0;i<n.length;i++){
+		size=20+4*i
+		txt+="<p style='font-size:"+size+"px'>"+n[i]+" </p>"
+	}
+	document.getElementById("pr").innerHTML=txt
+
+</script>
+</body>
+</html>
