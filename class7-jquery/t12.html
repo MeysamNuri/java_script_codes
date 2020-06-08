@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(e) {
+        $("#add").click(function(){
+			$("ol").append("<li>item</li>");
+		});
+		$("#badd").click(function(){
+			$("ol").prepend("<li>item-p</li>");
+		});
+		
+    });
+</script>
+</head>
+
+<body>
+<button id="add">
+	after add
+</button>
+<button id="badd">
+	before add
+</button>
+<ol>
+	<li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(e) {
+        $("#add").click(function(){
+			$("h1").after(" aaaa");
+		});
+		$("#badd").click(function(){
+			$("h1").before("mmmm ");
+		});
+		
+    });
+</script>
+</head>
+
+<body>
+<button id="add">
+	after 
+</button>
+<button id="badd">
+	before 
+</button>
+<h1>mft.info</h1>
+</body>
+</html>
