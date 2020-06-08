@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.4.1.min.js"></script>
+<style>
+	div{
+		width:200px;
+		height: 200px;
+		border:2px solid black;
+	}
+</style>
+	
+<script>
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			var txt="majid poursadat";
+			$("#mydiv").html(txt);
+		});
+	})
+	
+</script>	
+</head>
+
+<body>
+	<button id="btn">
+	text
+	</button>
+
+	<p id="mydiv"></p>
+</body>
+</html>

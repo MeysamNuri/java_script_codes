@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.4.1.min.js"></script>
+<style>
+	div{
+		width:200px;
+		height: 200px;
+		border:2px solid black;
+	}
+	.myclass{
+		border-radius: 50%;
+		background-color:red;
+	}
+</style>
+	
+<script>
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			$("#mydiv").addClass("myclass");
+		});
+		$("#rbtn").click(function(){
+			$("#mydiv").removeClass("myclass");
+		});
+	})
+	
+</script>	
+</head>
+
+<body>
+	<button id="btn">
+	add class
+	</button>
+	<button id="rbtn">
+	remove class
+	</button>
+	<div id="mydiv">
+	
+	</div>
+</body>
+</html>
