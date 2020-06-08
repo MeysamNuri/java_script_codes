@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+firstname:	<input type="text" id="name" name="name"><br>
+email: <input type="email" id="email" name="email"><br>
+<button onClick="validate()">
+	send
+</button>
+<p id="result">
+</p>
+	<script>
+    	function validate(){
+			var name=document.getElementById("name").value;
+			var email=document.getElementById("email").value;
+			if(name=="ali"){
+				document.getElementById("result").innerHTML="welcome ali";
+			}else if(email==""){
+				document.getElementById("result").innerHTML="error";	
+			}else{
+				document.getElementById("result").innerHTML="error";	
+			}
+		}
+    </script>
+</body>
+</html>

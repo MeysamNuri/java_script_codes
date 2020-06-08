@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="num">
+<button onClick="numberCheck()">check</button>
+<p id="pr"></p>
+<script>
+	function numberCheck(){
+		var n=document.getElementById("num").value;
+		var txt="";
+		console.log(!isNaN(n));
+		if(n==""||n<0||n>10){
+			txt="not invalid number";	
+		}else{
+			txt="ok";
+		}
+			document.getElementById("pr").innerHTML=txt;
+	}
+</script>
+</body>
+</html>

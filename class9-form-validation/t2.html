@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="t1.html" name="myform" onSubmit="return validate()">
+    firstname:	<input type="text" id="name" ><br>
+    <input type="submit" value="submit">
+</form>
+<p id="pr"></p>
+<script>
+function validate(){	
+	var n=document.forms["myform"]["name"].value;
+	if(n==""){
+		alert("error");
+
+	}
+}
+
+</script>
+</body>
+</html>
