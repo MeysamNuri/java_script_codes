@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script>
+$(function(){
+	$("#t").tabs();
+})
+</script>
+<style>
+.ui-state-active{
+	color:white;
+	background:black !important;
+	border-color:red !important;	
+}
+.ui-widget-header{
+	background:#00ABFF !important;	
+}
+</style>
+</head>
+
+<body>
+<div id="t">
+	<ul>
+    	<li>
+        	<a href="#t1">tab1</a>
+        </li>
+    	<li>
+        	<a href="#t2">tab2</a>
+        </li>
+    	<li>
+        	<a href="#t3">tab3</a>
+        </li>
+    	<li>
+        	<a href="#t4">tab4</a>
+        </li>
+    </ul>
+    <div id="t1">
+    	<h3>title1</h3>
+        <p>
+        	fgsdLorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptatum, praesentium, porro, fuga ab obcaecati sunt dignissimos dolore iusto aliquam eaque consectetur et inventore officiis iure maiores nemo perspiciatis asperiores.
+        </p>
+    </div>
+    <div id="t2">
+    	<h3>title2</h3>
+        <p>
+        	ytrtLorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptatum, praesentium, porro, fuga ab obcaecati sunt dignissimos dolore iusto aliquam eaque consectetur et inventore officiis iure maiores nemo perspiciatis asperiores.
+        </p>
+    </div>
+    <div id="t3">
+    	<h3>title3</h3>
+        <p>
+        	yyyLorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptatum, praesentium, porro, fuga ab obcaecati sunt dignissimos dolore iusto aliquam eaque consectetur et inventore officiis iure maiores nemo perspiciatis asperiores.
+        </p>
+    </div>
+    <div id="t4">
+    	<h3>title4</h3>
+        <p>
+        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptatum, praesentium, porro, fuga ab obcaecati sunt dignissimos dolore iusto aliquam eaque consectetur et inventore officiis iure maiores nemo perspiciatis asperiores.
+        </p>
+    </div>
+</div>
+</body>
+</html>
