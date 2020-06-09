@@ -1,0 +1,32 @@
+<students>
+	<student>
+		<id>1</id>
+		<name>mohammad</name>
+		<lastname>naderi</lastname>
+		<contact>09018085835</contact>
+	</student>
+	<student>
+		<id>2</id>
+		<name>shahab</name>
+		<lastname>hesaraki</lastname>
+		<contact>09018085835</contact>
+	</student>
+		<student>
+		<id>3</id>
+		<name>amir</name>
+		<lastname>shakibi</lastname>
+		<contact>09018085835</contact>
+	</student>
+		<student>
+		<id>4</id>
+		<name>ahmad</name>
+		<lastname>saadatmand</lastname>
+		<contact>09018085850</contact>
+	</student>
+	<student>
+		<id>5</id>
+		<name>ali</name>
+		<lastname>ssss</lastname>
+		<contact>09018085835</contact>
+	</student>
+</students>
