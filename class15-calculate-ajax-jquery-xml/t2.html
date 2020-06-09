@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.br{
+	width:500px;
+	height:300px;
+	border:2px solid black;
+	margin:0 auto;	
+}
+img{
+	width:100%;
+	height:100%;	
+}
+</style>
+
+</head>
+
+<body>
+<div class="br">
+	<img src="a.png" alt="" id="images">
+</div>
+
+
+<script>
+function sl(){
+	var img=document.getElementById("images").src;
+	if(img=="a.png"){
+	
+		document.getElementById("images").src="b.png";
+
+	}else if(img=="b.png"){
+		
+		document.getElementById("images").src="c.png";
+	}else{
+		document.getElementById("images").src="a.png";	
+	}
+}
+setInterval(sl,1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<student>
+	<stu>
+		<id>1</id>
+		<name>ali</name>
+		<lastname>kalan</lastname>
+	</stu>
+	<stu>
+		<id>2</id>
+		<name>gholam</name>
+		<lastname>naderi</lastname>
+	</stu>
+	<stu>
+		<id>3</id>
+		<name>reza</name>
+		<lastname>shakibi</lastname>
+	</stu>
+</student>

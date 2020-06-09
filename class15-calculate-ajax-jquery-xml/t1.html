@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<script>
+// function cl(){
+// 	var input=document.getElementById("in").value;
+// 	var select=document.getElementById("myselect").selectedIndex;
+// 	var result="";
+// 	if(select==0){
+// 		result=Math.ceil((input*1.8)+32);
+// 	}else{
+// 		result=Math.ceil((input-32)/1.8);
+		
+// 	}
+// 	document.getElementById("r").innerHTML=result;	
+// }
+
+function cl(){
+	var input = document.getElementById("in").value
+	var selected=document.getElementById("myselect").selectedIndex
+	var result=""
+	if(selected==0){
+		result=Math.ceil((input*10)/5)
+	}else{
+		result=Math.ceil((input +5)*3)
+	}
+	document.getElementById("pr").innerHTML=result
+}
+</script>
+<select name="" id="myselect">
+	<option>c</option>
+    <option>f</option>
+</select>
+<input type="text" id="in">
+<button onClick="cl()">calc</button>
+<p id="r"></p>
+
+
+</body>
+</html>
