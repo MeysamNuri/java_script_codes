@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+#mydiv{
+	border:2px solid black;
+	background:red;
+	width:200px;
+	height:200px;
+	transition:1s;	
+}
+
+</style>
+</head>
+
+<body>
+
+<input type="text" id="w" placeholder="width div">
+<input type="text" id="h" placeholder="height div">
+<button onClick="divsize()">run</button>
+<div id="mydiv"></div>
+<p id="er"></p>
+<script>
+function divsize(){
+	var w=document.getElementById("w").value;
+	var h=document.getElementById("h").value;
+	if(w<100){
+			alert("لطا عرض را بیشتر از 100 وارد نمایید");
+	}else if(w>600){
+		alert("لطفا عرض را کمتر از 600 وارد نمایید");	
+	}else if(h<100){
+		alert("ارتفاع را بیشتر از 100 وارد نمایید");	
+	}else if(h>600){
+		alert("ارتفاع را کمتر از 600 وارد نمایید");
+	}else{
+		document.getElementById("mydiv").style.width=w+"px";
+		document.getElementById("mydiv").style.height=h+"px";
+	}
+}
+</script>
+</body>
+</html>

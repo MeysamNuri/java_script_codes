@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="Minimal-jQuery-News-Ticker-Plugin-inewsticker/Minimal-jQuery-News-Ticker-Plugin-inewsticker/inewsticker.js"></script>
+<script>
+$(document).ready(function() {
+	$('.demo').inewsticker({
+		speed:200, // text change speed
+		effect:"typing", // fade, slide or typing
+		dir:"ltr", // ltr or rtl
+		font_size:"20px", // text font size
+		color:"#500", // text color
+		font_family:"tahoma", // text font family
+		delay_after:1000 //  text speed delay after	
+		
+	});
+});
+</script>
+<style>
+body{
+	height:2000px;	
+}
+
+</style>
+
+</head>
+
+<body>
+<ul class="demo">
+    <li>item1 sfs sfs sfsd</li>
+</ul>
+</body>
+</html>
