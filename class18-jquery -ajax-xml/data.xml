@@ -1,0 +1,22 @@
+<students>
+	<stu>
+		<id>1</id>
+		<name>ali</name>
+		<family>kalan</family>
+	</stu>
+	<stu>
+		<id>2</id>
+		<name>majid</name>
+		<family>poursadat</family>
+	</stu>
+	<stu>
+		<id>3</id>
+		<name>ahmad</name>
+		<family>rezaee</family>
+	</stu>
+	<stu>
+		<id>4</id>
+		<name>reza</name>
+		<family>ahmadi</family>
+	</stu>
+</students>
