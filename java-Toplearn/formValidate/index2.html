@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+   
+
+
+Name : <input type="text" id="fname">
+<input type="button" value="Submit" onclick="MyFunction()"/>
+<p id="demo"></p>
+
+
+
+  </body>
+
+  <script>
+function MyFunction()
+{
+ 
+    var x,text;
+
+    x=document.getElementById('fname').value;
+
+    if(isNaN(x) || x<1 || x>10){
+        text = "Input Not Valid";
+        document.getElementById('demo').innerHTML=text;
+        document.getElementById("demo").style.color="red"
+    }
+    else{
+        text="Input Ok ."
+        document.getElementById('demo').innerHTML=text;
+        document.getElementById('demo').style.color="green";
+    }
+
+    
+
+}
+  </script>
+</html>
