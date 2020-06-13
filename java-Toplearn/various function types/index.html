@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+    function MyFunction() {
+      var a, b, c;
+      a = 10;
+      b = 20;
+      c = a * b;
+      alert(c);
+    }
+
+    var x = function(a, b) {
+      return a + b;
+    };
+    var c = x(4, 6);
+    console.log(c);
+
+    var my = new Function("a", "b", "return a*b");
+    var a1 = my(4, 2);
+    console.log(a1);
+
+    (function() {
+     // alert("Loaded ...");
+    })();
+
+    (function() {})();
+
+    function sum(a, b) {
+      return a + b;
+    }
+    var c1 = sum(4, 6) + 3;
+    console.log(c1.toString() + "2");
+
+    //function sum2 (a , b ) => a+b;
+    var sum2 = (a,b) => a+b;
+    const sum3 = (x,y) => {
+      return x*y
+      };
+
+
+    alert(sum3(7,8));
+
+
+    
+  </script>
+</html>
