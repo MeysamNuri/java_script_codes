@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+    <style></style>
+  </head>
+  <body onload="loadBody()">
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+
+    <button onclick="this.innerHTML = 'oops !'">Click Me !</button>
+
+    <h1 onclick="changeText(this)">Click Me 2 !</h1>
+    <h1 onclick="changeText(this)">Click Me 3 !</h1>
+    <button onclick="displayDate()">The Time Is ?</button>
+    <p id="demo"></p>
+    <button id="myBtn">Iman Button</button> <br />
+    Name Is : <input type="text" id="fname" onchange="myFunction()" /> <br />
+    <div
+      onmouseover="mOver(this)"
+      onmouseout="mOut(this)"
+      style="background-color: blueviolet;width: 120px;height: 20px;padding: 40px;color: white"
+    >
+      Mouse over Me
+    </div>
+  </body>
+
+  <script>
+    function mOver(obj) {
+      obj.innerHTML = "Thank You !";
+    }
+    function mOut(obj) {
+      obj.innerHTML = "Mouse Over Me !";
+    }
+
+    function myFunction() {
+      var element = document.getElementById("fname");
+      element.value = element.value.toUpperCase();
+    }
+   
+    function changeText(text) {
+      text.innerHTML = "Oooops !!!!!!";
+    }
+
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+
+    document.getElementById("myBtn").onclick = salamIman;
+    function salamIman() {
+      alert("Hello Iman Madaeny");
+    }
+
+    function loadBody() {
+      alert("Body Loaded ...");
+    }
+  </script>
+</html>
