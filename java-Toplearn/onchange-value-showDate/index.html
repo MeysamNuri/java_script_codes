@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <h2 id="lbl">Result</h2>
+    <button onclick="ShowDate()">Click Me !</button>
+    <button onclick="this.innerHTML=Date()">Click Me 2 !</button>
+    <br/>
+    <input type="text" onchange="ChangeInput(this.value)"/>
+  </body>
+
+  <script>
+function ShowDate()
+{
+  document.getElementById('lbl').innerHTML=Date();
+}
+
+function ChangeInput(value)
+{
+  document.getElementById('lbl').innerHTML=value;
+}
+  </script>
+</html>
