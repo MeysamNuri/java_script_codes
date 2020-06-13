@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <h2 id="lblResult"></h2>
+  </body>
+
+  <script>
+    function SayHello() {
+      alert("Hello TopLearn");
+    }
+
+    //SayHello();
+
+    function Sum(x, y) {
+      //
+      //
+      //
+      return x + y;
+    }
+    var person={
+      name:"meysam",
+      family:"nuri",
+      fulname:function(){
+        return this.name+" "+this.family
+      }
+    }
+document.write(person.fulname())
+    var Name = "Iman";
+    var Family = "Madaeny";
+    function FullName() {
+      return Name + " " + Family;
+    }
+    alert(FullName());
+    document.getElementById("lblResult").innerHTML = FullName();
+  </script>
+</html>
