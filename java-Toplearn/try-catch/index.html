@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <p>Please input a number between 5 and 10 :</p>
+    <input type="text" id="demo"/>
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+  </body>
+
+  <script>
+    function myFunction() {
+      // var message;
+      // var x;
+
+      var message, x;
+      message = document.getElementById("p01");
+      message.innerHTML = "";
+      x = document.getElementById("demo").value;
+
+      try {
+       
+        if (x == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+
+        x=Number(x);
+
+        if(x<5) throw "too low";
+        if(x>10) throw "too hight";
+
+      } catch (err) {
+        message.innerHTML = "Input is "+err;
+      }
+      finally
+      {
+        document.getElementById("demo").value = "";
+      }
+    }
+
+
+
+    // try {
+    //   addImanMadaeny("Iman Madaeny");
+    // } catch (err) {
+    //   document.getElementById("result").innerHTML = err.message;
+    // }
+    // finally
+    // {
+    //   //alert("Finaly");
+    // }
+
+    // function addImanMadaeny(name)
+    // {
+
+    // }
+    // throw 500;
+  </script>
+</html>
