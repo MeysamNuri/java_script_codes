@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+    <style></style>
+  </head>
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <button onclick="myFunction()">Try It</button>
+    <button onclick="alert('Hello \n How Are You ?')">Try It 2</button>
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var txt = "";
+        var person = prompt("Please Enter Your Name :", "Iman Madaeny");
+        if (person == null || person == "") {
+          txt = "User Cancelled The Prompt !";
+        } else {
+          txt = "Hello " + person;
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+
+    </script>
+  </body>
+</html>
