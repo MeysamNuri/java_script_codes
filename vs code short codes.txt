@@ -1,0 +1,25 @@
+
+alt + shift + arrow up or down  = duplicate a line
+
+alt + arrow up or down = move a line 
+
+ctrl + d = change a code in many lines
+
+ ctrl + shift + alt + arrow down = write code in many lines 
+
+ ctrl + w = close a tab
+
+ ctrl  + tab = change tab 
+
+ctr + b = open explorer
+
+ctrl + \ = open this tab in new tab
+
+ ctr + p or e = find a file 
+
+ctrl + g  =find a line 
+
+ctrl + ` = open terminal 
+
+ul > a.container * 10 in html 
+
