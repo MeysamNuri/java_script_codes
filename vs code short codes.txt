@@ -26,4 +26,5 @@ ul > a.container * 10 in html
 vs code extentions:
 1- simple react snippets
 2- Auto import tsx es6
+3- Auto rename tag...
 
