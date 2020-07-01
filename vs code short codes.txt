@@ -22,7 +22,7 @@ ctrl + g  =find a line
 ctrl + ` = open terminal 
 
 ul > a.container * 10 in html 
-
+regex patern to delete comments <!--(.*?)-->
 vs code extentions:
 1- simple react snippets
 2- Auto import tsx es6
