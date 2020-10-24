@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Document</title>
+  <style>
+    #business-numbers{
+      font-weight: bolder;
+      font-family: "Vazir";
+      font-size: 20px;
+    }
+    .number-holder{
+      text-align: center;
+    }
+    #number {
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: helvetica;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.container{
+  background: #555;
+  color: #fff;
+  font-size: 36px;
+  width: 100%;
+  
+}
+
+#horas, #dias, #meses, #ano{
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+
+
+  </style>
+</head>
+<body>
+  <div >
+ 
+  </div>
+
+<div class="number-holder">
+ 
+  <p id="business"></p>
+<p id="transAction" id="number"></p>
+<p id="customerApi"></p>
+<p id="transActionSum"></p>
+</div>
+
+
+<script>
+ function priceDigitSeperator(price = '', ) {
+if (price) {
+
+return Math.ceil(parseFloat(price))
+.toString()
+.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+}
+return '';
+}
+</script>
+<script>
+  var request
+
+if (window.XMLHttpRequest) {
+request = new XMLHttpRequest()
+} else {
+request = new ActiveXObject('Microsoft.XMLHTTP')
+}
+
+request.open('GET', 'https://api.daapapp.com/api/v1/site/statistics')
+request.onreadystatechange = function () {
+if (request.readyState === 4 && request.status === 200) {
+ var items = JSON.parse(request.responseText);
+
+
+  var bussinesApi=priceDigitSeperator(items.data.business_num);
+  var transAction=items.data.posTransaction_num;
+  var customer=items.data.customer_num;
+  var postTransaction=priceDigitSeperator(items.data.posTransaction_sum);
+ document.getElementById("business").innerHTML = bussinesApi;
+ document.getElementById("transAction").innerHTML = transAction;
+ document.getElementById("customerApi").innerHTML = customer;
+ document.getElementById("transActionSum").innerHTML = postTransaction;
+ 
+}
+}
+
+request.send()
+
+</script>
+
+  
+</body>
+</html>
