@@ -1,0 +1,509 @@
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>50T landing</title>
+    <style>
+        #loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader .dot {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87.5px;
+}
+#loader .dot::before {
+    border-radius: 100%;
+    content: "";
+    height: 87.5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    width: 87.5px;
+}
+#loader .dot:nth-child(7n+1) {
+    transform: rotate(45deg);
+}
+#loader .dot:nth-child(7n+1)::before {
+    animation: 0.8s linear 0.1s normal none infinite running load;
+    background: #00ff80 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+2) {
+    transform: rotate(90deg);
+}
+#loader .dot:nth-child(7n+2)::before {
+    animation: 0.8s linear 0.2s normal none infinite running load;
+    background: #00ffea none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+3) {
+    transform: rotate(135deg);
+}
+#loader .dot:nth-child(7n+3)::before {
+    animation: 0.8s linear 0.3s normal none infinite running load;
+    background: #00aaff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+4) {
+    transform: rotate(180deg);
+}
+#loader .dot:nth-child(7n+4)::before {
+    animation: 0.8s linear 0.4s normal none infinite running load;
+    background: #0040ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+5) {
+    transform: rotate(225deg);
+}
+#loader .dot:nth-child(7n+5)::before {
+    animation: 0.8s linear 0.5s normal none infinite running load;
+    background: #2a00ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+6) {
+    transform: rotate(270deg);
+}
+#loader .dot:nth-child(7n+6)::before {
+    animation: 0.8s linear 0.6s normal none infinite running load;
+    background: #9500ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+7) {
+    transform: rotate(315deg);
+}
+#loader .dot:nth-child(7n+7)::before {
+    animation: 0.8s linear 0.7s normal none infinite running load;
+    background: magenta none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+8) {
+    transform: rotate(360deg);
+}
+#loader .dot:nth-child(7n+8)::before {
+    animation: 0.8s linear 0.8s normal none infinite running load;
+    background: #ff0095 none repeat scroll 0 0;
+}
+#loader .lading {
+    background-image: url("../images/loading.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+}
+#loader .dot {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87.5px;
+}
+#loader .dot::before {
+    border-radius: 100%;
+    content: "";
+    height: 87.5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    width: 87.5px;
+}
+#loader .dot:nth-child(7n+1) {
+    transform: rotate(45deg);
+}
+#loader .dot:nth-child(7n+1)::before {
+    animation: 0.8s linear 0.1s normal none infinite running load;
+    background: #00ff80 none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+2) {
+    transform: rotate(90deg);
+}
+#loader .dot:nth-child(7n+2)::before {
+    animation: 0.8s linear 0.2s normal none infinite running load;
+    background: #00ffea none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+3) {
+    transform: rotate(135deg);
+}
+#loader .dot:nth-child(7n+3)::before {
+    animation: 0.8s linear 0.3s normal none infinite running load;
+    background: #00aaff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+4) {
+    transform: rotate(180deg);
+}
+#loader .dot:nth-child(7n+4)::before {
+    animation: 0.8s linear 0.4s normal none infinite running load;
+    background: #0040ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+5) {
+    transform: rotate(225deg);
+}
+#loader .dot:nth-child(7n+5)::before {
+    animation: 0.8s linear 0.5s normal none infinite running load;
+    background: #2a00ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+6) {
+    transform: rotate(270deg);
+}
+#loader .dot:nth-child(7n+6)::before {
+    animation: 0.8s linear 0.6s normal none infinite running load;
+    background: #9500ff none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+7) {
+    transform: rotate(315deg);
+}
+#loader .dot:nth-child(7n+7)::before {
+    animation: 0.8s linear 0.7s normal none infinite running load;
+    background: magenta none repeat scroll 0 0;
+}
+#loader .dot:nth-child(7n+8) {
+    transform: rotate(360deg);
+}
+#loader .dot:nth-child(7n+8)::before {
+    animation: 0.8s linear 0.8s normal none infinite running load;
+    background: #ff0095 none repeat scroll 0 0;
+}
+#loader .lading {
+    background-image: url("../images/loading.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+@keyframes load {
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
+.loading-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    font-size: 25px;
+    font-family: system-ui;
+}
+.loading-text1{
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    font-size: 25px;
+    font-family: system-ui;
+}
+
+@media (max-width: 320px){
+    .loading-text1{
+    font-size: 17px;
+    }
+    .loading-text{
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+    .loading-text1{
+        font-size: 20px !important;
+    }
+    .loading-text{
+        font-size: 22px !important;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="lading"></div>
+                
+            
+            </div>
+            <p class="loading-text">...صفحه در حال انتقال می باشد</p>
+            <p class="loading-text1"> برای رفتن به صفحه دانلود <strong ><a href="https://daapapp.com/#download-part" style="text-decoration: none;"> <span style="color: #00ff80;"> &nbsp;اینجا کلیک &nbsp;</span></a></strong>  کنید</p>
+        </div>
+        
+    </div>
+    <iframe id="l" width="1" height="1" style="visibility:hidden"></iframe>
+    <script>
+     
+        (function (window) {
+            {
+                var unknown = '-';
+    
+                // screen
+                var screenSize = '';
+                if (screen.width) {
+                    width = (screen.width) ? screen.width : '';
+                    height = (screen.height) ? screen.height : '';
+                    screenSize += '' + width + " x " + height;
+                }
+    
+                // browser
+                var nVer = navigator.appVersion;
+                var nAgt = navigator.userAgent;
+                var browser = navigator.appName;
+                var version = '' + parseFloat(navigator.appVersion);
+                var majorVersion = parseInt(navigator.appVersion, 10);
+                var nameOffset, verOffset, ix;
+    
+                // Opera
+                if ((verOffset = nAgt.indexOf('Opera')) != -1) {
+                    browser = 'Opera';
+                    version = nAgt.substring(verOffset + 6);
+                    if ((verOffset = nAgt.indexOf('Version')) != -1) {
+                        version = nAgt.substring(verOffset + 8);
+                    }
+                }
+                // Opera Next
+                if ((verOffset = nAgt.indexOf('OPR')) != -1) {
+                    browser = 'Opera';
+                    version = nAgt.substring(verOffset + 4);
+                }
+                // Edge
+                else if ((verOffset = nAgt.indexOf('Edge')) != -1) {
+                    browser = 'Microsoft Edge';
+                    version = nAgt.substring(verOffset + 5);
+                }
+                // MSIE
+                else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
+                    browser = 'Microsoft Internet Explorer';
+                    version = nAgt.substring(verOffset + 5);
+                }
+                // Chrome
+                else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+                    browser = 'Chrome';
+                    version = nAgt.substring(verOffset + 7);
+                }
+                // Safari
+                else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+                    browser = 'Safari';
+                    version = nAgt.substring(verOffset + 7);
+                    if ((verOffset = nAgt.indexOf('Version')) != -1) {
+                        version = nAgt.substring(verOffset + 8);
+                    }
+                }
+                // Firefox
+                else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+                    browser = 'Firefox';
+                    version = nAgt.substring(verOffset + 8);
+                }
+                // MSIE 11+
+                else if (nAgt.indexOf('Trident/') != -1) {
+                    browser = 'Microsoft Internet Explorer';
+                    version = nAgt.substring(nAgt.indexOf('rv:') + 3);
+                }
+                // Other browsers
+                else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+                    browser = nAgt.substring(nameOffset, verOffset);
+                    version = nAgt.substring(verOffset + 1);
+                    if (browser.toLowerCase() == browser.toUpperCase()) {
+                        browser = navigator.appName;
+                    }
+                }
+                // trim the version string
+                if ((ix = version.indexOf(';')) != -1) version = version.substring(0, ix);
+                if ((ix = version.indexOf(' ')) != -1) version = version.substring(0, ix);
+                if ((ix = version.indexOf(')')) != -1) version = version.substring(0, ix);
+    
+                majorVersion = parseInt('' + version, 10);
+                if (isNaN(majorVersion)) {
+                    version = '' + parseFloat(navigator.appVersion);
+                    majorVersion = parseInt(navigator.appVersion, 10);
+                }
+    
+                // mobile version
+                var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+    
+                // cookie
+                var cookieEnabled = (navigator.cookieEnabled) ? true : false;
+    
+                if (typeof navigator.cookieEnabled == 'undefined' && !cookieEnabled) {
+                    document.cookie = 'testcookie';
+                    cookieEnabled = (document.cookie.indexOf('testcookie') != -1) ? true : false;
+                }
+    
+                // system
+                var os = unknown;
+                var clientStrings = [
+                    {s:'Windows 10', r:/(Windows 10.0|Windows NT 10.0)/},
+                    {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
+                    {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
+                    {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
+                    {s:'Windows Vista', r:/Windows NT 6.0/},
+                    {s:'Windows Server 2003', r:/Windows NT 5.2/},
+                    {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
+                    {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
+                    {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
+                    {s:'Windows 98', r:/(Windows 98|Win98)/},
+                    {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
+                    {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+                    {s:'Windows CE', r:/Windows CE/},
+                    {s:'Windows 3.11', r:/Win16/},
+                    {s:'Android', r:/Android/},
+                    {s:'Open BSD', r:/OpenBSD/},
+                    {s:'Sun OS', r:/SunOS/},
+                    {s:'Chrome OS', r:/CrOS/},
+                    {s:'Linux', r:/(Linux|X11(?!.*CrOS))/},
+                    {s:'iOS', r:/(iPhone|iPad|iPod)/},
+                    {s:'Mac OS X', r:/Mac OS X/},
+                    {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+                    {s:'QNX', r:/QNX/},
+                    {s:'UNIX', r:/UNIX/},
+                    {s:'BeOS', r:/BeOS/},
+                    {s:'OS/2', r:/OS\/2/},
+                    {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+                ];
+                for (var id in clientStrings) {
+                    var cs = clientStrings[id];
+                    if (cs.r.test(nAgt)) {
+                        os = cs.s;
+                        break;
+                    }
+                }
+    
+                var osVersion = unknown;
+    
+                if (/Windows/.test(os)) {
+                    osVersion = /Windows (.*)/.exec(os)[1];
+                    os = 'Windows';
+                }
+    
+                switch (os) {
+                    case 'Mac OS X':
+                        osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+                        break;
+    
+                    case 'Android':
+                        osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
+                        break;
+    
+                    case 'iOS':
+                        osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+                        osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+                        break;
+                }
+    
+        
+                var flashVersion = 'no check';
+                if (typeof swfobject != 'undefined') {
+                    var fv = swfobject.getFlashPlayerVersion();
+                    if (fv.major > 0) {
+                        flashVersion = fv.major + '.' + fv.minor + ' r' + fv.release;
+                    }
+                    else  {
+                        flashVersion = unknown;
+                    }
+                }
+            }
+    
+            window.jscd = {
+                screen: screenSize,
+                browser: browser,
+                browserVersion: version,
+                browserMajorVersion: majorVersion,
+                mobile: mobile,
+                os: os,
+                osVersion: osVersion,
+                cookies: cookieEnabled,
+                flashVersion: flashVersion
+            };
+        }(this));
+    
+        if(jscd.os=='Android'){
+      
+           setInterval(() => {
+            window.location.href = 'https://cafebazaar.ir/app/com.daapapp.crmrn?';
+           }, 1000);
+        }
+        else if(jscd.os=='iOS'){
+            setInterval(() => {
+                window.location.href = 'https://web-customer.daapapp.com/';
+            }, 1000);
+        }
+        else{
+    alert("window")
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
