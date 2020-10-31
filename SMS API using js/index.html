@@ -82,6 +82,7 @@
       </section>
       
       <script>
+
         async function TwilioNameLookup() {
           try{
 
@@ -106,11 +107,6 @@
           const body =await result.json();
           console.log(body);
       
-          if (body.callerName) {
-            const name = body.callerName.caller_name;
-            const kind = body.callerName.caller_type;
-            alert(`Name: ${name}n` + `Kind: ${kind}`);
-          }
          
          }catch(e){
            console.log(e.data)
