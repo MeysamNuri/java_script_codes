@@ -1,0 +1,320 @@
+
+@import url('https://cdn.bootcdn.net/ajax/libs/vazir-font/26.0.2/Farsi-Digits/font-face-FD.css');
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir.eot');
+    src: url('Vazir.eot?#iefix') format('embedded-opentype'),
+        url('Vazir.woff') format('woff'), url('Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Sahel;
+    src: url('fonts/Sahel-Black-FD-WOL.ttf');
+    src: url('fonts/Sahel-Black.ttf') format('embedded-opentype'),
+        url('fonts/Sahel-FD-WOL.ttf') format('woff'), url('fonts/BYekan-webfont.ttf') format('truetype');
+    font-weight: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("image/map-crop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    direction: rtl;
+    font-family: 'Sahel';
+
+
+}
+.back-hilight{
+    background-color: rgba(218, 174, 174, 0.8);
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.login-header{
+    background-image: url("image/header.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.header-text{
+    width: 20%;
+    text-align: center;
+}
+.footer-style{
+    background-image: url("image/footer.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;   
+    
+}
+.about{
+    color: white;
+    padding: 5px 0 0px 0; 
+    font-weight: 600;
+
+}
+.socials a{
+    text-decoration: none;
+}
+.social-pic{
+    width: 25px;
+    margin: 0px 5px;
+}
+.email-text,.crm-text{
+    color: white;
+    padding: 20px 0;
+}
+.logo-style{
+    width: 5%;
+    margin-top: 15px;
+}
+.first-text-style{
+    width: 85%;
+    margin: 15px 0;
+    text-align: right;
+    font-weight: 800;
+    font-size: 20px;
+}
+.second-text-style{
+    width: 85%;
+    margin: 15px 0;
+    text-align: right;
+    font-weight: 800;
+    font-size: 20px;
+}
+.login-input{
+    direction: ltr;
+    width: 500px;
+  
+}
+#get-otp{
+    border-radius: 18px;
+    padding: 25px 15px;
+    background-color: white !important;
+    background: repeating-linear-gradient(155deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 3% 75%/ 20ch 1px no-repeat;
+    letter-spacing: 2.2ch;
+}
+.send-button{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 13px;
+    background-color: #F93A3A;
+    color: white;
+    padding: 3px 13px;
+    border-radius: 17px;
+    margin: 5px auto;
+    cursor: pointer;
+   
+}
+
+.pins-holder{
+width: 75%;
+height:300px;
+margin: 80px 0;
+position: relative;
+}
+.store-pins{
+    width: 65px;
+    position: absolute;
+   
+}
+
+.pin-title-sweet{
+    position: absolute;
+    color: red;
+    left: -27px;
+    top: -26px;
+    font-size: 14px;
+}
+.pin-title-fruit{
+    position: absolute;
+    color: red;
+    left: 44%;
+    top: -27px;
+    font-size: 14px;
+}
+.pin-title-flower{
+    position: absolute;
+    color: red;
+    right: 0;
+    top: -24px;
+    font-size: 14px;
+
+}
+.pin-title-meet{
+    position: absolute;
+    color: red;
+    left: 26%;
+    top: 31%;
+    font-size: 14px;
+}
+.pin-title-super{
+    position: absolute;
+    color: red;
+    top: 31%;
+    right: 25%;
+    font-size: 14px;
+}
+
+.tick{
+    width: 90px;
+    z-index: 10000;
+}
+.tick-flower{
+    width: 45px;
+    position: absolute;
+    z-index: 10000;
+    top: -5px;
+    right: -24px;
+    display: none;
+}
+.tick-meet{
+    width: 45px;
+    z-index: 10000;
+    position: absolute;
+    top: 38%;
+    left: 31%;
+    display: none;
+}
+.tick-super{
+    width: 45px;
+    z-index: 10000;
+    position: absolute;
+    top: 40%;
+    right: 22%;
+    display: none;
+}
+.tick-fruit{
+    width: 45px;
+    z-index: 10000;
+    position: absolute;
+    top: -6px;
+    left: 51%;
+    display: none;
+}
+.tick-sweet{
+    width: 45px;
+    z-index: 10000;
+    position: absolute;
+    left: 41px;
+    top: -4px;
+    display: none;
+}
+#sweet{
+    left: 0px;
+    top: 0;
+}
+#fruit{
+    top: 0;
+    left: 45%;
+}
+#flower{
+    top: 0;
+    right: 0;
+}
+#meet{
+    top: 40%;
+    left: 25%;
+}
+#super{
+    top: 40%;
+    right: 25%;
+}
+.alert-text{
+
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: 500;
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+.link-style{
+    background-color: #F93A3A;
+    width: 45%;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 18px;
+    margin: 0px auto;
+}
+
+
+@media (max-width:768px){
+    .pin-title-super,.pin-title-meet,.pin-title-flower,.pin-title-sweet,.pin-title-fruit{
+        font-size: 11px;
+    }
+    body{
+        background-image: url("image/map.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .login-header{
+        background-image: url("image/header.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    height: -webkit-fill-available;
+
+    }
+    .header-text{
+        width: 45%;
+        text-align: center;
+    }
+    
+element.style {
+}
+.logo-style {
+    width: 13%;
+    margin-top: 10px;
+}
+.first-text-style{
+    width: 80%;
+    margin: 20px 0;
+    text-align: justify;
+    letter-spacing: -1;
+}
+.second-text-style{
+    width: 80%;
+    margin: 30px 0;
+    text-align: justify;
+    letter-spacing: -1;
+}
+.login-input {
+    direction: ltr;
+    width: 80%;
+}
+.store-pins{
+    width: 45px;
+    position: absolute;
+   
+}
+.pins-holder {
+
+    margin-bottom: 145px;
+ 
+}
+.link-style{
+    width: 82%;
+}
+#get-otp{
+    border-radius: 18px;
+    padding: 25px 203px;
+    background-color: white !important;
+    background: repeating-linear-gradient(156deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 14px 75%/ 21ch 1px no-repeat;
+    letter-spacing: 2.4ch !important;
+    padding: 26px 15px !important;
+}
+
+}
