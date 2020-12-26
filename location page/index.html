@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>داپ اَپ | فروشگاه ها</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+ 
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  
+   <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMapp&libraries=&v=weekly"
+     defer
+   ></script>
+
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="row">
+         <div class="alert-group">
+               <div class="alert alert-danger alert-dismissable" id="alert-location">
+               
+                  برای شناسایی موقعیت خود فقط با گوشی تلفن همراه خود وارد شوید
+               </div>
+             
+           
+           </div>
+      </div>
+   </div>
+   <div id="body"></div>
+   <div id="map"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/text-image/dist/text-image.js"></script> 
+ 
+   <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWcIEDM0bxLsxgzYz2KfegNuhXoY5DJMc&callback=initMapp&libraries=places&v=weekly"
+      type="text/javascript"></script> 
+      
+     <script>
+        // Note: This example requires that you consent to location sharing when
+// prompted by your browser. If you see the error "The Geolocation service
+// failed.", it means you probably did not give permission for the browser to
+// locate you.
+let map, infoWindow;
+
+function initMapp() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 35.6892, lng: 51.3890 },
+    zoom: 12,
+  });
+  infoWindow = new google.maps.InfoWindow();
+  const locationButton = document.createElement("button");
+  locationButton.textContent = "موقعیت خود را روی نقشه پیدا کنید";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+            zoom:18
+          };
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("شما اینجا هستید");
+          infoWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(
+    browserHasGeolocation
+      ? "Error: The Geolocation service failed."
+      : "Error: Your browser doesn't support geolocation."
+  );
+  infoWindow.open(map);
+}
+     </script>
+
+     
+<script>
+     
+   (function (window) {
+       {
+           var unknown = '-';
+
+           // screen
+           var screenSize = '';
+           if (screen.width) {
+               width = (screen.width) ? screen.width : '';
+               height = (screen.height) ? screen.height : '';
+               screenSize += '' + width + " x " + height;
+           }
+
+           // browser
+           var nVer = navigator.appVersion;
+           var nAgt = navigator.userAgent;
+           var browser = navigator.appName;
+           var version = '' + parseFloat(navigator.appVersion);
+           var majorVersion = parseInt(navigator.appVersion, 10);
+           var nameOffset, verOffset, ix;
+
+           // Opera
+           if ((verOffset = nAgt.indexOf('Opera')) != -1) {
+               browser = 'Opera';
+               version = nAgt.substring(verOffset + 6);
+               if ((verOffset = nAgt.indexOf('Version')) != -1) {
+                   version = nAgt.substring(verOffset + 8);
+               }
+           }
+           // Opera Next
+           if ((verOffset = nAgt.indexOf('OPR')) != -1) {
+               browser = 'Opera';
+               version = nAgt.substring(verOffset + 4);
+           }
+           // Edge
+           else if ((verOffset = nAgt.indexOf('Edge')) != -1) {
+               browser = 'Microsoft Edge';
+               version = nAgt.substring(verOffset + 5);
+           }
+           // MSIE
+           else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
+               browser = 'Microsoft Internet Explorer';
+               version = nAgt.substring(verOffset + 5);
+           }
+           // Chrome
+           else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+               browser = 'Chrome';
+               version = nAgt.substring(verOffset + 7);
+           }
+           // Safari
+           else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+               browser = 'Safari';
+               version = nAgt.substring(verOffset + 7);
+               if ((verOffset = nAgt.indexOf('Version')) != -1) {
+                   version = nAgt.substring(verOffset + 8);
+               }
+           }
+           // Firefox
+           else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+               browser = 'Firefox';
+               version = nAgt.substring(verOffset + 8);
+           }
+           // MSIE 11+
+           else if (nAgt.indexOf('Trident/') != -1) {
+               browser = 'Microsoft Internet Explorer';
+               version = nAgt.substring(nAgt.indexOf('rv:') + 3);
+           }
+           // Other browsers
+           else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+               browser = nAgt.substring(nameOffset, verOffset);
+               version = nAgt.substring(verOffset + 1);
+               if (browser.toLowerCase() == browser.toUpperCase()) {
+                   browser = navigator.appName;
+               }
+           }
+           // trim the version string
+           if ((ix = version.indexOf(';')) != -1) version = version.substring(0, ix);
+           if ((ix = version.indexOf(' ')) != -1) version = version.substring(0, ix);
+           if ((ix = version.indexOf(')')) != -1) version = version.substring(0, ix);
+
+           majorVersion = parseInt('' + version, 10);
+           if (isNaN(majorVersion)) {
+               version = '' + parseFloat(navigator.appVersion);
+               majorVersion = parseInt(navigator.appVersion, 10);
+           }
+
+           // mobile version
+           var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+
+           // cookie
+           var cookieEnabled = (navigator.cookieEnabled) ? true : false;
+
+           if (typeof navigator.cookieEnabled == 'undefined' && !cookieEnabled) {
+               document.cookie = 'testcookie';
+               cookieEnabled = (document.cookie.indexOf('testcookie') != -1) ? true : false;
+           }
+
+           // system
+           var os = unknown;
+           var clientStrings = [
+               {s:'Windows 10', r:/(Windows 10.0|Windows NT 10.0)/},
+               {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
+               {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
+               {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
+               {s:'Windows Vista', r:/Windows NT 6.0/},
+               {s:'Windows Server 2003', r:/Windows NT 5.2/},
+               {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
+               {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
+               {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
+               {s:'Windows 98', r:/(Windows 98|Win98)/},
+               {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
+               {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+               {s:'Windows CE', r:/Windows CE/},
+               {s:'Windows 3.11', r:/Win16/},
+               {s:'Android', r:/Android/},
+               {s:'Open BSD', r:/OpenBSD/},
+               {s:'Sun OS', r:/SunOS/},
+               {s:'Chrome OS', r:/CrOS/},
+               {s:'Linux', r:/(Linux|X11(?!.*CrOS))/},
+               {s:'iOS', r:/(iPhone|iPad|iPod)/},
+               {s:'Mac OS X', r:/Mac OS X/},
+               {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+               {s:'QNX', r:/QNX/},
+               {s:'UNIX', r:/UNIX/},
+               {s:'BeOS', r:/BeOS/},
+               {s:'OS/2', r:/OS\/2/},
+               {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+           ];
+           for (var id in clientStrings) {
+               var cs = clientStrings[id];
+               if (cs.r.test(nAgt)) {
+                   os = cs.s;
+                   break;
+               }
+           }
+
+           var osVersion = unknown;
+
+           if (/Windows/.test(os)) {
+               osVersion = /Windows (.*)/.exec(os)[1];
+               os = 'Windows';
+           }
+
+           switch (os) {
+               case 'Mac OS X':
+                   osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+                   break;
+
+               case 'Android':
+                   osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
+                   break;
+
+               case 'iOS':
+                   osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+                   osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+                   break;
+           }
+
+   
+           var flashVersion = 'no check';
+           if (typeof swfobject != 'undefined') {
+               var fv = swfobject.getFlashPlayerVersion();
+               if (fv.major > 0) {
+                   flashVersion = fv.major + '.' + fv.minor + ' r' + fv.release;
+               }
+               else  {
+                   flashVersion = unknown;
+               }
+           }
+       }
+
+       window.jscd = {
+           screen: screenSize,
+           browser: browser,
+           browserVersion: version,
+           browserMajorVersion: majorVersion,
+           mobile: mobile,
+           os: os,
+           osVersion: osVersion,
+           cookies: cookieEnabled,
+           flashVersion: flashVersion
+       };
+   }(this));
+
+   if(jscd.os=='Android'){
+           document.getElementById("alert-location").style.display="none"
+
+      
+   }
+   else if(jscd.os=='iOS'){
+              document.getElementById("alert-location").style.display="none"
+
+   }
+   else{
+document.getElementById("body").style.backgroundColor="rgba(0,0,0,.5)"
+document.getElementById("body").style.zIndex="10000"
+           }
+
+
+</script>
+
+   
+</body>
+
+</html>
