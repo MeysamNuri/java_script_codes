@@ -147,6 +147,7 @@
       } 
          var store_adresses=document.getElementById("storeAddres")
        var link=window.location.href.split('/');
+      //  var link=extractParamsFromString(window.location.href)
        var Linkurl=`https://api.daapapp.com/web/businesses/near/${link[link.length-1]}`
        console.log(Linkurl);
       //  request.open('GET', 'data2.json')
@@ -286,6 +287,44 @@ function showMap() {
         localStorage.setItem('lng', loc.lng)
         window.location.href = 'map.html'
 }
+
+
+
+function extractParamsFromString(str) {
+if (str && typeof str === 'string') {
+let _str=str
+if(!(str.indexOf('?')>-1)){
+_str='/?'+str
+}
+let regex = /[?&]([^=#]+)=([^&#]*)/g,
+params = {},
+match;
+while ((match = regex.exec(_str))) {
+params[match[1]] = match[2];
+}
+return params;
+}
+return {};
+}
+
+
+// export function extractParamsFromString(str: string | any): any {
+// if (str && typeof str === 'string') {
+// let _str=str
+// if(!(str.indexOf('?')>-1)){
+// _str='/?'+str
+// }
+// let regex = /[?&]([^=#]+)=([^&#]*)/g,
+// params: any = {},
+// match;
+// while ((match = regex.exec(_str))) {
+// params[match[1]] = match[2];
+// }
+// return params;
+// }
+// return {};
+// }
+
    
     </script>
 
