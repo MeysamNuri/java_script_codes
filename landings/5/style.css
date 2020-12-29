@@ -1,0 +1,216 @@
+@import url('https://cdn.bootcdn.net/ajax/libs/vazir-font/26.0.2/Farsi-Digits/font-face-FD.css');
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir.eot');
+  src: url('Vazir.eot?#iefix') format('embedded-opentype'),
+    url('Vazir.woff') format('woff'), url('Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Vazir' !important;
+}
+
+#section-1 {
+  background-image: linear-gradient(to top, #008979, #07bb9d);
+  height: auto;
+}
+#header {
+  width: calc(100% - 600px);
+
+  height: 60px;
+  background-color: white;
+  text-align: center;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.box {
+  background-color: white;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+.box:before {
+  background: linear-gradient(to right, #029e88, rgba(0, 0, 0, 0));
+  bottom: -3px;
+  content: '';
+  display: inline-block;
+  height: 3px;
+  right: -120px;
+  position: absolute;
+  width: 150px;
+}
+.box:after {
+  background: linear-gradient(to left, #029b86, rgba(0, 0, 0, 0));
+  bottom: -3px;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  left: -128px;
+  position: absolute;
+  width: 150px;
+}
+
+#header p {
+  color: teal;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.daap-text {
+  background-color: #ffcb41;
+  padding: 40px 4px 6px 4px;
+  box-shadow: 0px -3px 7px 2px #dedede;
+}
+
+.figure-caption {
+  color: white;
+}
+.box-link {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.box-link p {
+  background-color: white;
+  text-align: center;
+  padding: 12px 0px;
+  margin: 0px auto;
+  border-radius: 35px;
+  width: 28%;
+
+  font-weight: 600;
+}
+.rounded {
+  border-radius: 7.25rem !important;
+}
+.alert-holder {
+  background-color: #ffbb09;
+  padding: 25px 0px;
+}
+#section-2 {
+  background-color: #06a88c;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.play-button {
+  width: 152px;
+  height: 152px;
+  position: relative;
+  cursor: pointer;
+}
+
+.play-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.play-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 15px);
+  border: none;
+  outline: none;
+  background: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.play-close::before,
+.play-close::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.play-close::after {
+  transform: rotate(-45deg);
+}
+
+.play-circles {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.play-perspective {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: -230px;
+  top: -125px;
+}
+
+.play-triangle {
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  #header {
+    width: calc(100% - 90px);
+    font-size: 14px;
+  }
+  .box-link p {
+    width: 77%;
+  }
+  .box:before {
+    right: -40px;
+    width: 90px;
+  }
+  .box:after {
+    left: -55px;
+    position: absolute;
+    width: 90px;
+  }
+  .alert-logo {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  #header {
+    width: calc(100% - 45px);
+    font-size: 14px;
+  }
+  .box-link p {
+    width: 80%;
+    font-size: 14px;
+  }
+  .box:before {
+    right: -20px;
+    width: 70px;
+  }
+  .box:after {
+    left: -29px;
+    position: absolute;
+    width: 70px;
+  }
+}
