@@ -13,19 +13,19 @@
   <script>
     var ali = { name: "Iman", family: "Madaeny", age: 30 };
 
-    function Person(name, family, age) {
-      this.name = name;
+    function Person(namee, family, age) {
+      this.name1 = namee;
       this.family = family;
       this.age = age;
       this.fullName = function()
       {
-       return this.name + " " + this.family; 
+       return this.name1 + " " + this.family; 
       }
     }
 
     var iman = new Person("iman", "madaeny", 20);
     iman.carname = "Pride";
-    console.log(iman.fullName());
+    console.log(iman);
 
     var mina = new Person("mina", "minaei", 18);
 
@@ -35,13 +35,13 @@
     people.push(new Person("sara", "ahmadi", 19));
     people.push(new Person("ali", "rezaei", 41));
 
-    console.log(people);
+    console.log(people[0]);
 
     var text = "";
 
     for (x in people) {
       text +=
-        people[x].name +
+        people[x].name1 +
         " " +
         people[x].family +
         " -> " +

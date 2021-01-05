@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+    const users=["mohamad","navid","meysam"]
+    // const newUsers=[...users]
+    // console.log(newUsers);
+// const lastusers=["nahid","roya","mahsa"]
+//     const arrUsers=[...users,...lastusers]
+//     console.log(arrUsers);
+
+
+//     const usermeysam={
+//         name:"meysam",
+//         age:27,
+//         weight:90
+//     }
+
+//     const usermohamad={
+//         ...usermeysam,
+//         name:"mohamad"
+//     }
+//     console.log(usermohamad);
+
+
+
+    const userArray=[
+        {
+            id:1,
+            name:"meysam"
+        },
+        {
+            id:2,
+            name:"saeed"
+        },
+        {
+            id:3,
+            name:"navid"
+        },
+    ]
+
+    const deletuser=(arr,id)=>{
+        let foundIndex=arr.findIndex(item=>item.id===id)
+        if(foundIndex ==-1) return arr;
+        return [...arr.slice(0,foundIndex),...arr.slice(foundIndex+1)]
+      
+
+    }
+    
+    const editUser=(arr,id,name)=>{
+        let foundIndex=arr.findIndex(item=>item.id===id)
+        if(foundIndex ==-1) return arr;
+        return [...arr.slice(0,foundIndex),{...arr[foundIndex],name},...arr.slice(foundIndex+1)]
+    }
+    const newarr=deletuser(userArray,2)
+    const editArray=editUser(userArray,1,"nahid")
+    console.log(newarr);
+    console.log(editArray);
+    </script>
+</body>
+
+</html>
