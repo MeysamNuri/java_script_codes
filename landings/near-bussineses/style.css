@@ -1,16 +1,7 @@
 
 @import url('https://cdn.bootcdn.net/ajax/libs/vazir-font/26.0.2/Farsi-Digits/font-face-FD.css');
 @import url(https://db.onlinewebfonts.com/c/52ce4de2efeeb8b18dcbd379711224f3?family=B+Yekan);
-@font-face {font-family: "B Yekan"; src: url("https://db.onlinewebfonts.com/t/52ce4de2efeeb8b18dcbd379711224f3.eot"); src: url("https://db.onlinewebfonts.com/t/52ce4de2efeeb8b18dcbd379711224f3.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/52ce4de2efeeb8b18dcbd379711224f3.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/52ce4de2efeeb8b18dcbd379711224f3.woff") format("woff"), url("https://db.onlinewebfonts.com/t/52ce4de2efeeb8b18dcbd379711224f3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/52ce4de2efeeb8b18dcbd379711224f3.svg#B Yekan") format("svg"); } 
 
-
-@font-face {
-    font-family: Vazir;
-    src: url('Vazir.eot');
-    src: url('Vazir.eot?#iefix') format('embedded-opentype'),
-        url('Vazir.woff') format('woff'), url('Vazir.ttf') format('truetype');
-    font-weight: normal;
-}
 @font-face {
     font-family: Sahel;
     src: url('fonts/Sahel-Black-FD-WOL.ttf');
@@ -24,7 +15,7 @@
 }
 body{
     direction: rtl !important;
-   font-family:"Vazir" !important ;
+   font-family:"Sahel" !important ;
 }
 #pay-date{
     font-family: "B Yekan" !important;
